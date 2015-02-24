@@ -1,5 +1,5 @@
 # icinga-scripts
-icinga/nagios nagios monitoring scripts
+icinga/nagios monitoring scripts
 --------------------------------
 
 ./check-domain.pl - check domain: expires, dns serials and zone transfer
