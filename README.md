@@ -1,7 +1,9 @@
 # icinga-scripts
-Icinga nagios monitoring scripts:
+icinga/nagios nagios monitoring scripts
+--------------------------------
 
 ./check-domain.pl - check domain: expires, dns serials and zone transfer
-        perl modules:
-		cpan install Net::Domain::ExpireDate
-		cpan install Net::DNS
+
+perl modules:
+* Net::DNS `cpan install Net::DNS`
+* Net::Domain::ExpireDate  `cpan install Net::Domain::ExpireDate`
