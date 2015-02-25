@@ -55,13 +55,13 @@ sub check_cert_exp() {
 
     my $cert_days_exp_left = int( $cert_sec_exp_left / ( 24 * 60 * 60 ) );
 
-    if ( $expire_critical_days >= $cert_sec_exp_left ) {
+    if ( $expire_critical_days >= $cert_days_exp_left ) {
         return (
             "certificate for $host:$port expires via $cert_days_exp_left days",
             "CRITICAL"
         );
     }
-    if ( $expire_warn_days >= $cert_sec_exp_left ) {
+    if ( $expire_warn_days >= $cert_days_exp_left ) {
         return (
             "certificate for $host:$port expires via $cert_days_exp_left days",
             "WARNING"
