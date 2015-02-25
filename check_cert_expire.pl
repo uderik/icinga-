@@ -35,7 +35,7 @@ Usage: $0 --host ip --port ssl_port
 Sample: $0 --host www.google.com --port 443 # check google cert
 Sample: $0 --host smtp.gmail.com --port 465 # check google smtps cert
 EOF
-    exit;
+    exit 2;
 }
 
 ( $message, $status ) = &check_cert_exp();
